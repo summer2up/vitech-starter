@@ -1,13 +1,11 @@
 <template>
   <div class="about">
-    <RouterLink to="/">home</RouterLink>
-    <RouterLink to="/about">about</RouterLink>
+ 
     <h1>This is an about page</h1>
   </div>
 </template>
 
 <script lang="ts" setup>
-import { RouterLink } from 'vue-router/auto'
 </script>
 
 <style>
@@ -20,7 +18,7 @@ import { RouterLink } from 'vue-router/auto'
 }
 </style>
 
-<route lang="yaml">
+<!-- <route lang="yaml">
 meta:
   layout: home
-</route>
+</route> -->

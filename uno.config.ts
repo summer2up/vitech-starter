@@ -1,7 +1,7 @@
 // uno.config.ts
 import { defineConfig } from 'unocss'
 // import presetWind from '@unocss/preset-wind'
-import { presetWind, presetIcons } from 'unocss'
+import { presetWind, presetIcons, transformerDirectives } from 'unocss'
 
 export default defineConfig({
   presets: [
@@ -12,5 +12,6 @@ export default defineConfig({
         display: 'inline-block'
       }
     })
-  ]
+  ],
+  transformers: [transformerDirectives()]
 })
