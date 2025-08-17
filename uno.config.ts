@@ -1,7 +1,7 @@
 // uno.config.ts
 import { defineConfig } from 'unocss'
 // import presetWind from '@unocss/preset-wind'
-import { presetWind, presetIcons, transformerDirectives } from 'unocss'
+import { presetWind, presetIcons, transformerDirectives, transformerVariantGroup } from 'unocss'
 
 export default defineConfig({
   presets: [
@@ -13,5 +13,10 @@ export default defineConfig({
       }
     })
   ],
-  transformers: [transformerDirectives()]
+  transformers: [transformerDirectives(), transformerVariantGroup()],
+  theme: {
+    colors: {
+      main: '#4E98F4'
+    }
+  }
 })

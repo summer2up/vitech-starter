@@ -1,13 +1,9 @@
 <template>
-   <div class="flex items-center justify-start  w-[1200px] mx-auto">
+  <div class="max-w-[1200px] w-full mx-auto flex items-center justify-start">
     <slot></slot>
   </div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts"></script>
 
-</script>
-
-<style scoped>
-
-</style>
+<style scoped></style>
